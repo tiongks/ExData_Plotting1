@@ -1,0 +1,6 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+exdata-data-household_power_consumption.*
+household_power_consumption.txt
