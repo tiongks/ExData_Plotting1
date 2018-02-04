@@ -12,7 +12,7 @@ if (force_refresh || !exists("housing_data") || is.na(housing_data) || is.null(h
   housing_data <- read_housing_data()
 }
 # save the graph to a png file
-png(file = "plot3.png")
+png(file = "plot3.png", width = 480, height = 480, units = "px")
 
 # render the graphs
 plot(housing_data[,c("DateTime", "Sub_metering_1")], type = "l", ylab = "Energy sub metering")

@@ -13,7 +13,7 @@ if (force_refresh || !exists("housing_data") || is.na(housing_data) || is.null(h
 }
 
 # save the graph to a png file
-png(file = "plot2.png")
+png(file = "plot2.png", width = 480, height = 480, units = "px")
 
 # plot the global active power against date and time
 plot(housing_data[, c("DateTime", "Global_active_power")], type = "l", ylab= "Global Active Power (kilowatts)")

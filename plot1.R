@@ -13,7 +13,7 @@ if (force_refresh || !exists("housing_data") || is.na(housing_data) || is.null(h
 }
 
 # save the graph to a png file
-png(file = "plot1.png")
+png(file = "plot1.png", width = 480, height = 480, units = "px")
 
 # generate the graph
 hist(housing_data$Global_active_power, 

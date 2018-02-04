@@ -13,7 +13,7 @@ if (force_refresh || !exists("housing_data") || is.na(housing_data) || is.null(h
 }
 
 # save the graph to a png file
-png(file = "plot4.png")
+png(file = "plot4.png", width = 480, height = 480, units = "px")
 
 # set the display to 2 rows and 2 columns
 par(mfrow = c(2, 2))
